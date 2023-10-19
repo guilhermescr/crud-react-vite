@@ -1,8 +1,12 @@
+import Users from './Users';
+import { UserProvider } from './provider/UserProvider';
+import './global.css';
+
 function App() {
   return (
-    <>
-      <h1>Users Table CRUD</h1>
-    </>
+    <UserProvider>
+      <Users />
+    </UserProvider>
   );
 }
 
